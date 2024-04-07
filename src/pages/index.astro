@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { CommonQuestions } from "@/components/CommonQuestions";
+import Footer from "@/components/footer.astro";
+import Header from "@/components/header.astro";
+import "@/styles/globals.css";
+import felix from "../assets/hgfhvhfdg.png";
+import Image from "astro/components/Image.astro";
+---
+
+<Layout title="Home">
+  <main class="" transition:animate="fade">
+    <section class="bg-black text-white py-52 relative">
+      <Header />
+      <div class="max-w-4xl m-auto flex flex-col items-center gap-20">
+        <div class="flex flex-col">
+          <h2 class="text-7xl font-bold text-center">Desbloqueie o Potencial</h2>
+          <h2 class="text-7xl text-center text-zinc-600 font-bold">das Suas Vendas</h2>
+        </div>
+
+        <div>
+          <p class="texto-destaque rounded-lg">Concelho de Ouro</p>
+        </div>
+
+        <div class="flex flex-col text-center leading-6 texto-apagado">
+          <p>Não confie nas empresas "01".</p>
+          <p>Parece que há muitos "01". Certo ?</p>
+        </div>
+
+        <Image src={felix} alt={"felix"} width={240} class="absolute bottom-0 right-2/3" />
+      </div>
+    </section>
+    <section class="max-w-6xl m-auto pt-44 pb-28 flex flex-col items-center gap-14">
+      <h2 class="text-5xl text-center font-semibold">
+        Você não quer apenas um chip.
+        <p class="text-4xl font-semibold text-center text-zinc-400">Você deseja escalar sua operação.</p>
+      </h2>
+      <div class="flex gap-4 mb-20">
+        <div class="bg-[#F2F2F2] p-6 w-[576px] rounded-2xl shadow-md flex items-end justify-between">
+          <p class="text-2xl font-semibold">
+            Talvez você se identifique com
+            <br /> uma dessas situações.
+          </p>
+          <div class="w-14">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              ><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="3-Arrow Right"></path></svg
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 text-white">
+          <div class="bg-black p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg leading-6">Chips quem não duram 1 semana</p>
+          </div>
+          <div class="bg-black p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg">Banimentos de WhatsApp</p>
+          </div>
+          <div class="bg-black p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg">Texto dentro da caixa</p>
+          </div>
+          <div class="bg-black p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg">Texto dentro da caixa</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-5xl text-center font-semibold">
+        Você não quer apenas um chip.
+        <p class="text-4xl font-semibold text-center text-zinc-500">Você deseja escalar sua operação.</p>
+      </h2>
+
+      <div class="flex gap-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-[#F2F2F2] p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg leading-6">Chips quem não duram 1 semana</p>
+          </div>
+          <div class="bg-[#F2F2F2] p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg">Banimentos de WhatsApp</p>
+          </div>
+          <div class="bg-[#F2F2F2] p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg">Texto dentro da caixa</p>
+          </div>
+          <div class="bg-[#F2F2F2] p-6 rounded-2xl shadow-md h-52 w-64 flex">
+            <p class="text-lg">Texto dentro da caixa</p>
+          </div>
+        </div>
+        <div class="bg-black p-6 w-[576px] rounded-2xl shadow-md flex items-end justify-between text-white">
+          <div class="w-14">
+            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z" data-name="4-Arrow Left"></path>
+            </svg>
+          </div>
+          <p class="text-2xl font-semibold text-right">
+            Talvez você se identifique com
+            <br /> uma dessas situações.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section>
+    <div class="max-w-4xl m-auto my-16">
+      <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+      <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+      <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+      <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+      <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+      <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+    </div>
+  </section>
+  <Footer />
+</Layout>
+
+<style>
+  .texto-apagado {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.22), rgb(192, 192, 192));
+    background-clip: text;
+    color: transparent;
+  }
+  .texto-destaque {
+    padding: 8px;
+    padding-inline: 20px;
+    background-image: linear-gradient(to right, rgba(38, 34, 5, 0.3), rgba(38, 34, 5, 1));
+    background-clip: padding-box;
+    color: #aa9c13;
+  }
+</style>

@@ -1,0 +1,20 @@
+---
+import Image from "astro/components/Image.astro";
+import logo from "../assets/zWhite.png";
+---
+
+<div class="">
+  <header class="fixed top-0 left-1/2 transform -translate-x-1/2 bg-[#3c3d3c80] backdrop-blur shadow-lg rounded-full mt-6">
+    <div class="p-[03px] flex justify-center items-center text-[17px]">
+      <div class="bg-zinc-900/50 h-11 px-2 rounded-full cursor-pointer font-bold flex justify-center items-center">
+        <Image src={logo} alt={"logo Zapfy"} width={38} class={"mx-6"} />
+      </div>
+      <div class="hover:bg-zinc-400/50 h-11 px-8 rounded-full cursor-pointer flex justify-center items-center transition-colors duration-300">
+        <a href="#page">Sobre nós</a>
+      </div>
+      <div class="hover:bg-zinc-900 hover:text-white h-11 w-32 rounded-full cursor-pointer font-semibold flex justify-center items-center bg-white text-black transition-colors duration-300">
+        <a href="#page1">Preços</a>
+      </div>
+    </div>
+  </header>
+</div>
