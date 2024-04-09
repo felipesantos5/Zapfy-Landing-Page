@@ -4,6 +4,15 @@ module.exports = {
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}", "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   prefix: "",
   theme: {
+    screens: {
+      "2xl": { max: "1535px" },
+      xl: { max: "1200px" },
+      lg: { max: "1095px" },
+      md: { max: "750px" },
+      xmd: { max: "550px" },
+      sm: { max: "450px" },
+      xsm: { max: "350px" },
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -12,6 +21,10 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        cream: "#F2F2F2",
+        graySecundary: "#616161",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

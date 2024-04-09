@@ -1,0 +1,43 @@
+---
+import og from "../assets/aaa2.png";
+import og1 from "../assets/aa1.png";
+import teste from "../assets/teste.png";
+import { Image } from "astro:assets";
+---
+
+<section class="bg-black text-white pt-52">
+  <div class="max-w-5xl m-auto flex flex-col items-center gap-20 relative">
+    <div class="flex flex-col text-[80px] md:text-[40px] font-semibold text-center tracking-tighter leading-none sm:px-[5%]">
+      <h2>Livre-se de mistérios.</h2>
+      <h2 class="text-[#666666]">Escale sua operação.</h2>
+    </div>
+
+    <div class="flex flex-col gap-4 items-center">
+      <p class="golden-text rounded-lg">Pista de ouro</p>
+      <div class="flex flex-col text-center leading-6 out-text">
+        <p>Não confie nas empresas "01".</p>
+        <p>Parece que há muitos "01". Certo ?</p>
+      </div>
+    </div>
+
+    <div class="flex justify-between mt-40">
+      <Image src={og} alt={"felix"} width={245} class="absolute bottom-0 left-0 xsm:-left-5 md:w-44 xsm:w-36" format="avif" />
+      <Image src={teste} alt={"felix"} width={195} class="absolute bottom-0 right-0 xsm:-right-5 md:w-36 xsm:w-28" format="avif" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .out-text {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgb(192, 192, 192));
+    background-clip: text;
+    color: transparent;
+  }
+  .golden-text {
+    padding-inline: 30px;
+    padding-block: 6px;
+    background-image: linear-gradient(to right, rgba(38, 34, 5, 0.3), rgba(38, 34, 5, 1));
+    background-clip: padding-box;
+    color: #978b1a;
+  }
+</style>

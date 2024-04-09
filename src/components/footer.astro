@@ -1,9 +1,16 @@
-<footer class="bg-black py-24">
-  <div class="max-w-5xl m-auto h-52">
-    <h2 class="text-center text-5xl font-bold text-white">Desbloqueie o seu<br /> Potencial</h2>
-    <div class="flex gap-2 text-zinc-500 text-sm font-medium">
-      <a href="/politicas">politica de privacidade</a>
+---
+import bart from "../assets/OIG1.png";
+import { Image } from "astro:assets";
+---
+
+<footer class="bg-black pt-36">
+  <div class="max-w-2xl m-auto flex flex-col gap-6 items-center relative">
+    <h2 class="text-center text-5xl font-bold text-white">Livre-se de <br /> Mistérios.</h2>
+
+    <div class="absolute bottom-4 left-0 xmd:left-1/4 transform -translate-x-1/2 flex gap-3 text-zinc-500 text-sm font-medium">
       <a href="https://www.instagram.com/zapfy.br">instagram</a>
     </div>
+
+    <Image src={bart} alt="teste" width={200} />
   </div>
 </footer>
