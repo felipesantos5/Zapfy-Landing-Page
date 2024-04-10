@@ -8,6 +8,7 @@ module.exports = {
       "2xl": { max: "1535px" },
       xl: { max: "1200px" },
       lg: { max: "1095px" },
+      xlg: { max: "860px" },
       md: { max: "750px" },
       xmd: { max: "550px" },
       sm: { max: "450px" },
