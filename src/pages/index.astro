@@ -1,131 +1,31 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "@/styles/globals.css";
-// import Image from "astro/components/Image.astro";
-import { CommonQuestions } from "@/components/CommonQuestions";
-import Footer from "@/components/footer.astro";
-import Cta from "@/components/cta.astro";
-import { Image } from "astro:assets";
-import CardSell from "@/components/cardSell.astro";
-import bart from "../assets/OIG1.png";
+
+import Cta from "@/components/layout/cta.astro";
+import Sec1 from "@/components/layout/sec1.astro";
+import Sec2 from "@/components/layout/sec2.astro";
+import PlanesSec from "@/components/layout/planesSec.astro";
 ---
 
 <Layout title="Zapfy">
   <main transition:animate="fade">
     <Cta />
-    <section class="max-w-5xl m-auto pt-40 pb-28 flex flex-col items-center gap-16 lg:px-[10%]">
-      <h2 class="text-[40px] tracking-[-2px] text-center font-medium leading-none md:text-left">
-        Você não quer apenas um chip.
-        <p class="text-zinc-400">Você deseja escalar sua operação.</p>
-      </h2>
-      <div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20">
-        <div class="bg-cream p-6 rounded-2xl shadow-md flex items-end grow-1 lg:h-52">
-          <div class="flex justify-between items-center gap-4">
-            <p class="text-2xl font-semibold">
-              Talvez você se identifique com
-              <br /> uma dessas situações.
-            </p>
-            <div class="w-10">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
-                ><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="3-Arrow Right"></path></svg
-              >
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-white tracking-tighter text-[17px] leading-6">
-          <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Chips quem não duram 1 semana</p>
-          </div>
-          <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Banimentos frequentes de WhatsApp</p>
-          </div>
-          <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Você tem uma grande lista de contatos porém não consegue chamar todo mundo</p>
-          </div>
-          <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Texto dentro da caixa</p>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="text-5xl text-center font-semibold">
-        Executamos estratégias multicanais
-        <p class="text-4xl font-semibold text-center text-zinc-500">para aumentar suas taxas de conversão.</p>
-      </h2>
-
-      <div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20 lg:px-[10%]">
-        <div class="grid grid-cols-2 md:grid-cols-1 gap-4 tracking-tighter text-[17px] leading-6 font-medium">
-          <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Chips quem não duram 1 semana</p>
-          </div>
-          <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Banimentos de WhatsApp</p>
-          </div>
-          <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex">
-            <p></p>
-          </div>
-          <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex">
-            <p>Texto dentro da caixa</p>
-          </div>
-        </div>
-        <div class="bg-black p-6 rounded-2xl shadow-md flex items-end grow-0 text-white lg:h-52">
-          <div class="flex justify-between items-center gap-4">
-            <div class="w-10">
-              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                <path d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z" data-name="4-Arrow Left"></path>
-              </svg>
-            </div>
-            <p class="text-2xl font-semibold text-right">O que você vai conseguir?</p>
-          </div>
-        </div>
-      </div>
+    <section class="max-w-[1100px] m-auto pt-40 flex flex-col items-center gap-16 lg:px-[10%]">
+      <Sec1 />
+      <Sec2 />
     </section>
 
-    <section class="bg-cream pt-36 lg:px-[10%]" id="sobre-nos" transition:animate="initial">
-      <div class="max-w-5xl m-auto flex xlg:flex-col xlg:items-center gap-20">
-        <div class="flex flex-col items-center justify-center gap-4 mt-10 tracking-tighter text-[17px] leading-">
-          <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:text-left">Sobre nós</h2>
-          <p class="text-graySecundary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora vitae velit perspiciatis quisquam unde saepe officiis aliquam magnam consequuntur nihil harum quaerat dolore,
-            provident eius recusandae doloribus impedit consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat delectus corrupti perferendis beatae doloribus explicabo
-            atque? Fugit nihil, eum eligendi sit magnam corporis laboriosam exercitationem ipsum et a quisquam?
-          </p>
-        </div>
-        <img src={bart.src} alt="bart" width={200} />
-      </div>
-    </section>
+    <PlanesSec />
 
-    <section class="lg:px-[15%] pt-36" id="planos">
-      <div class="max-w-5xl m-auto mb-36 flex flex-col gap-14">
-        <h2 class="text-[40px] tracking-[-2px] text-center font-medium leading-none">Planos</h2>
-        <div class="grid grid-cols-3 lg:grid-cols-1 grid-flow-dense gap-6">
-          <CardSell title="1 chip" oldprice="199" newprice="119" negative={true} />
-          <CardSell title="3 chip" oldprice="499" newprice="320" />
-          <CardSell title="5 chip" oldprice="699" newprice="499" />
-        </div>
-
-        <div class="bg-black p-8 rounded-xl grid grid-cols-2 gap-20 lg:grid-cols-1 lg:gap-10">
-          <div class="flex flex-col gap-4">
-            <h2 class="text-[40px] tracking-[-2px] font-semibold leading-none text-white">Ficou com alguma dúvida ?</h2>
-            <p class="text-graySecundary max-w-[500px] font-medium leading-6">Entre em contato com nossa equipe para tirar qualquer duvida ou conferir outros pacotes.</p>
-          </div>
-          <div class="flex flex-col items-center justify-end gap-4">
-            <h2 class="text-white">Chame no WhatsApp</h2>
-            <button class="bg-white py-3 rounded-full w-2/3 lg:w-full font-semibold">WhatsApp</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="px-[10%] mb-36">
+    <!-- <section class="px-[10%] mb-36">
       <div class="max-w-4xl m-auto my-16">
+        <h2 class="text-[36px] tracking-[-2px] text-center font-medium leading-none mb-20">Perguntas frenquentes</h2>
         <CommonQuestions client:load title="Como o chip é aquecido" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
         <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
 
         <CommonQuestions client:load title="Comprei o chip e agora" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
-        <CommonQuestions client:load title="Qual o prazo de entrega" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
+        <CommonQuestions client:load title="Qual o prazo de entrega" text="" />
       </div>
-    </section>
+    </section> -->
   </main>
-  <Footer />
 </Layout>

@@ -1,0 +1,38 @@
+---
+import chipsParaEscala from "@/assets/chipraescala.png";
+import garantia from "@/assets/garantia.png";
+import bartCellphone from "@/assets/bartcellphone.png";
+---
+
+<div class="text-center md:text-left">
+  <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:inline-block md:pr-4">Tenha todas as ferramentas</h2>
+  <h2 class="text-zinc-400 text-[40px] tracking-[-2px] font-medium leading-none md:inline-block">para fortalecer sua contigência.</h2>
+</div>
+
+<div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20">
+  <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-black tracking-tighter text-[17px] leading-6">
+    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p class="w-2/3">Chips bem aquecidos para aguentar sua escala.</p>
+      <img src={chipsParaEscala.src} alt="varios celulares indicando escala" class="w-32 absolute right-5 bottom-0" />
+    </div>
+    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p>Garantia de 7 dias.</p>
+      <img src={garantia.src} alt="celular demonstrando confiança" class="w-32 absolute right-2 bottom-0" />
+    </div>
+    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p>Grupo no WhatsApp para suporte imediato.</p>
+      <img src={bartCellphone.src} alt="" class="w-28 absolute right-4 bottom-0" />
+    </div>
+    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex">
+      <p class="">Especialistas em contigência de WhatsApp para ajudar na sua operação.</p>
+    </div>
+  </div>
+  <div class="bg-black text-white p-6 rounded-2xl shadow-md flex items-end justify-between gap-4 grow-1 lg:h-52">
+    <div class="w-10">
+      <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z" data-name="4-Arrow Left"></path>
+      </svg>
+    </div>
+    <p class="text-2xl font-semibold text-right">O que você vai conseguir</p>
+  </div>
+</div>

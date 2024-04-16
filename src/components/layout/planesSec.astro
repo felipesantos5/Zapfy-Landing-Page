@@ -1,0 +1,25 @@
+---
+import CardSell from "@/components/cardSell.astro";
+---
+
+<section class="pt-36 lg:px-[15%] xmd:px-[10%]" id="planos">
+  <div class="max-w-[1100px] m-auto mb-36 flex flex-col gap-14">
+    <h2 class="text-[40px] tracking-[-2px] text-center font-medium leading-none">Planos</h2>
+    <div class="grid grid-cols-3 lg:grid-cols-1 grid-flow-dense gap-6">
+      <CardSell title="1 chip" oldprice="199" newprice="119" negative={true} />
+      <CardSell title="3 chip" oldprice="499" newprice="320" />
+      <CardSell title="5 chip" oldprice="699" newprice="499" />
+    </div>
+
+    <div class="bg-black p-8 rounded-xl grid grid-cols-2 items-center gap-20 lg:grid-cols-1 lg:gap-10">
+      <div class="flex flex-col gap-4">
+        <h2 class="text-[40px] tracking-[-2px] font-semibold leading-none sm:text-[34px] text-white">Ficou com alguma dúvida ?</h2>
+        <p class="text-graySecundary max-w-[500px] font-medium leading-6">Entre em contato com nossa equipe para esclarece-la ou saber mais sobre os nossos pacotes personalizados.</p>
+      </div>
+      <div class="flex flex-col items-center justify-end gap-5">
+        <h2 class="text-white">Entre em contato</h2>
+        <button class="bg-white hover:bg-graySecundary hover:text-white transition-colors duration-500 py-3 rounded-full w-2/3 lg:w-full font-semibold">WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</section>

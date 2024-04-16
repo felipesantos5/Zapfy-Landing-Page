@@ -1,0 +1,38 @@
+---
+import cellPhone from "@/assets/choros-sem-lagrimas.png";
+import sadBart from "@/assets/testt.png";
+---
+
+<div class="text-center md:text-left">
+  <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:inline-block md:pr-4">Você não quer apenas um chip.</h2>
+  <h2 class="text-zinc-400 text-[40px] tracking-[-2px] font-medium leading-none md:inline-block">Você deseja escalar sua operação.</h2>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20">
+  <div class="bg-cream p-6 rounded-2xl shadow-md flex items-end justify-between gap-4 grow-1 lg:h-52 sm:h-full">
+    <p class="text-2xl font-semibold">
+      Talvez você se identifique com
+      <br /> uma dessas situações.
+    </p>
+    <div class="w-10">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="3-Arrow Right"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-white tracking-tighter text-[17px] leading-6">
+    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p>Sua operação parou por falta de chips.</p>
+      <img src={cellPhone.src} alt="" class="w-28 absolute bottom-2 right-4" />
+    </div>
+    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p>Você sofre com banimentos frequentes de WhatsApp.</p>
+      <img src={sadBart.src} alt="" class="absolute w-16 bottom-0 right-6" />
+    </div>
+    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p class="">Você tem uma lista de leads e não consegue chamar ela inteira.</p>
+    </div>
+    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+      <p>Você não consegue escalar sua operação por falta de suporte.</p>
+    </div>
+  </div>
+</div>
