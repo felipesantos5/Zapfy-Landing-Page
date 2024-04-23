@@ -1,17 +1,16 @@
 ---
 interface Props {
   title: string;
-  oldprice: string;
-  newprice: string;
+  price: string;
   negative?: boolean;
 }
 
-const { title, oldprice, newprice, negative } = Astro.props;
+const { title, price, negative } = Astro.props;
 ---
 
 <div class="bg-cream p-8 flex flex-col gap-4 rounded-xl" transition:animate="initial">
   <h2>{title}</h2>
-  <p>de {oldprice} por {newprice}</p>
+  <p class="text-5xl font-semibold">R$ {price}</p>
   <div class="flex flex-col gap-12">
     <hr class="border border-gray-300 rounded-lg" />
   </div>

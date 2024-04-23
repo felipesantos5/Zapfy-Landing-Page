@@ -32,7 +32,6 @@ const Header = () => {
           transition={{ type: "spring", stiffness: 50, duration: 2 }}
           className="p-[03px] flex justify-center items-center text-[17px] bg-[#3c3d3c80] backdrop-blur-[5px] shadow-lg rounded-full mt-6 "
         >
-          {/* Logo */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -51,7 +50,7 @@ const Header = () => {
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 60, duration: 0.5 }}
-                className="h-11 w-36 xmd:w-12 hover:bg-[#484849]/70 transition-colors duration-500 rounded-full cursor-pointer font-semibold flex flex-col justify-center items-center text-white"
+                className="h-11 w-28 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
                 onClick={() => {
                   if (isMobile) {
                     toggleExpanded();
@@ -63,7 +62,6 @@ const Header = () => {
             </motion.div>
           )}
 
-          {/* Botões de ação (somente no desktop) */}
           {!isMobile && (
             <div className="flex xlg:flex">
               <motion.div
@@ -87,7 +85,7 @@ const Header = () => {
         </motion.div>
 
         {expanded && (
-          <div className="text-white flex flex-col justify-center items-center  bg-[#3c3d3c80]/35 backdrop-blur-[5px] shadow-lg rounded-xl">
+          <div className="text-white flex flex-col justify-center gap-4 items-center bg-[#3c3d3c80]/35 backdrop-blur-[5px] shadow-lg rounded-xl mt-1 py-4">
             {" "}
             <motion.div
               initial={{ x: -50, opacity: 0 }}
