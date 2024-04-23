@@ -1,7 +1,8 @@
 ---
 import cellPhone from "@/assets/choros-sem-lagrimas.png";
-import sadBart from "@/assets/testt.png";
+import sadBart from "@/assets/sadbart.png";
 import suport from "@/assets/suporte.png";
+import { Image } from "astro:assets";
 ---
 
 <div class="text-center md:text-left">
@@ -23,18 +24,18 @@ import suport from "@/assets/suporte.png";
   <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-white tracking-tighter text-[17px] leading-6">
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p>Sua operação parou por falta de chips.</p>
-      <img src={cellPhone.src} alt="" class="w-28 absolute bottom-2 right-4" />
+      <Image src={cellPhone} alt="" class="w-28 absolute bottom-2 right-4" />
     </div>
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p>Você sofre com banimentos frequentes de WhatsApp.</p>
-      <img src={sadBart.src} alt="" class="absolute w-16 bottom-0 right-6" />
+      <Image src={sadBart} alt="" class="absolute bottom-0 right-6" width="60" />
     </div>
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p class="">Você tem uma lista de leads e não consegue chamar ela inteira.</p>
     </div>
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p class="">Você não consegue escalar sua operação por falta de suporte.</p>
-      <img src={suport.src} alt="" class="w-20 absolute bottom-0 right-4" />
+      <Image src={suport} alt="" class="w-20 absolute bottom-0 right-4" />
     </div>
   </div>
 </div>
