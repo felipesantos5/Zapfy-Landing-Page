@@ -2,13 +2,16 @@
 import CardSell from "@/components/cardSell.astro";
 ---
 
-<section class="pt-56 lg:px-[15%] xmd:px-[10%]" id="planos">
-  <div class="max-w-[1100px] m-auto mb-36 flex flex-col gap-14">
-    <h2 class="text-[40px] tracking-[-2px] text-center font-medium leading-none">Planos</h2>
-    <div class="grid grid-cols-3 lg:grid-cols-1 grid-flow-dense gap-6">
-      <CardSell title="1 chip" price="119" negative={true} />
-      <CardSell title="3 chip" price="320" />
-      <CardSell title="5 chip" price="499" />
+<section class="pt-40 lg:px-[15%] xmd:px-[10%]" id="planos">
+  <div class="max-w-[1100px] m-auto mb-36 flex flex-col gap-7">
+    <div>
+      <h2 class="text-[46px] tracking-[-2px] font-medium text-center leading-none mb-16">Planos</h2>
+
+      <div class="grid grid-cols-3 lg:grid-cols-1 grid-flow-dense gap-6">
+        <CardSell title="Básico" price="119" negative={true} test="1 chip aquecido" description="1 chip aquecidos por 30 dias de qualidade premium." />
+        <CardSell title="Padrão" price="320" test="3 chips aquecidos" description="3 chips aquecidos por 30 dias de qualidade premium." />
+        <CardSell title="Premium" price="499" test="5 chips aquecidos" description="5 chips aquecidos por 30 dias de qualidade premium." />
+      </div>
     </div>
 
     <div class="bg-black p-8 rounded-xl grid grid-cols-2 items-center gap-20 lg:grid-cols-1 lg:gap-10">
@@ -18,7 +21,9 @@ import CardSell from "@/components/cardSell.astro";
       </div>
       <div class="flex flex-col items-center justify-end gap-5">
         <h2 class="text-white">Entre em contato</h2>
-        <button class="bg-white hover:bg-graySecundary hover:text-white transition-colors duration-500 py-3 rounded-full w-2/3 lg:w-full font-semibold">WhatsApp</button>
+        <button class="bg-white hover:bg-graySecundary hover:text-white transition-colors duration-500 py-3 rounded-full w-2/3 lg:w-full font-semibold"
+          ><a href="https://wa.me/48996130664?text=Gostaria%20de%20atendimento">WhatsApp</a></button
+        >
       </div>
     </div>
   </div>
