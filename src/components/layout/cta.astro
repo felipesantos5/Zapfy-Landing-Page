@@ -10,26 +10,25 @@ import { Image } from "astro:assets";
       <h2>Livre-se de mistérios.</h2>
       <h2 class="text-[#666666]">Escale sua operação.</h2>
     </div>
-    <p class="out-text text-2xl mb-16 sm:text-lg">Seu parceiro de crescimento</p>
-    <div class="flex flex-col gap-4 items-center">
-      <p class="golden-text rounded-lg">Pista de ouro</p>
+    <p class="text-[#413f3f] font-medium text-2xl sm:text-lg">Seu parceiro de crescimento</p>
 
-      <div class="flex flex-col text-center leading-6 out-text">
-        <p>Não confie nas empresas "01".</p>
-        <p>Parece que há muitos "01". Certo ?</p>
-      </div>
+    <!-- <p class="golden-text rounded-lg">Pista de ouro</p> -->
+
+    <div class="flex flex-col text-center leading-6 out-text">
+      <p>Não perca mais tempo.</p>
+      <p>Tempo não tem preço.</p>
     </div>
 
-    <div class="flex justify-between mt-32">
-      <Image src={bartFirst} alt={"bart detetive com uma lupa na mão"} width={245} class="absolute bottom-0 left-0 xsm:-left-5 md:w-44 xsm:w-36" />
-      <Image src={bartSecund} alt={"bart detetive com cara de desconfiado"} width={195} class="absolute bottom-0 right-0 md:w-36 xsm:w-28" />
+    <div class="flex justify-between mt-52">
+      <Image src={bartFirst} alt={"bart detetive com uma lupa na mão"} width={245} class="absolute bottom-0 left-0 xsm:-left-5 md:w-44 xsm:w-36" decoding="async" loading="lazy" />
+      <Image src={bartSecund} alt={"bart detetive com cara de desconfiado"} width={195} class="absolute bottom-0 right-0 md:w-36 xsm:w-28" decoding="async" loading="lazy" />
     </div>
   </div>
 </section>
 
 <style>
   .out-text {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgb(248, 247, 247));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgb(216, 213, 213));
     background-clip: text;
     color: transparent;
   }
