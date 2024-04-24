@@ -38,7 +38,7 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.5 }}
             className="bg-zinc-900/50 h-11 w-28 px-2 rounded-full font-bold flex justify-center items-center"
           >
-            <a href="">
+            <a href="/">
               <img src={logo.src} alt={"logo Zapfy teste"} width={38} className={"mx-6"} />
             </a>
           </motion.div>
