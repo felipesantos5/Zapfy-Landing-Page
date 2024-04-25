@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 import Cta from "@/components/layout/cta.astro";
 import Sec1 from "@/components/layout/sec1.astro";
 import Sec2 from "@/components/layout/sec2.astro";
-import PlanesSec from "@/components/layout/planesSec.astro";
 import AboutUs from "@/components/layout/aboutUs.astro";
-import { CommonQuestions } from "@/components/CommonQuestions";
+import PlanesSec from "@/components/layout/planesSec.astro";
+import CommonQuestionsSec from "@/components/layout/commonQuestionsSec.astro";
 ---
 
 <Layout title="Zapfy">
@@ -21,15 +20,6 @@ import { CommonQuestions } from "@/components/CommonQuestions";
 
     <PlanesSec />
 
-    <section class="px-[10%] mb-36">
-      <div class="max-w-4xl m-auto my-16">
-        <h2 class="text-[36px] tracking-[-2px] text-center font-medium leading-none mb-20">Perguntas frenquentes</h2>
-        <CommonQuestions client:load title="Como o chip é aquecido" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
-        <CommonQuestions client:load title="Como funciona a garantia" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
-
-        <CommonQuestions client:load title="Comprei o chip e agora" text="To get started, open the directory src/pages in your project. Code Challenge: Tweak the Welcome to Astro message above." />
-        <CommonQuestions client:load title="Qual o prazo de entrega" text="" />
-      </div>
-    </section>
+    <CommonQuestionsSec />
   </main>
 </Layout>
