@@ -1,4 +1,5 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import React from "react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./accordion";
 
 interface CommonQuestionsInterface {
   title: string;
