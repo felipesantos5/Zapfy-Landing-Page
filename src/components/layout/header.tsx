@@ -15,7 +15,7 @@ const Header = () => {
       setIsMobile(window.innerWidth < 860);
     };
 
-    handleResize(); // Verifica o tamanho da janela ao carregar a página
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -39,7 +39,7 @@ const Header = () => {
             className="bg-zinc-900/50 h-11 w-28 px-2 rounded-full font-bold flex justify-center items-center"
           >
             <a href="/">
-              <img src={logo.src} alt={"logo Zapfy teste"} width={38} height={38} className={"mx-6"} />
+              <img src={logo.src} alt={"logo Zapfy teste"} width={38} className={"mx-6"} />
             </a>
           </motion.div>
 
@@ -67,7 +67,7 @@ const Header = () => {
               <motion.a
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.4 }}
+                transition={{ type: "spring", stiffness: 80, duration: 1, delay: 1.0 }}
                 className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
                 href="#sobre-nos"
               >
@@ -76,7 +76,7 @@ const Header = () => {
               <motion.a
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.2 }}
+                transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.8 }}
                 className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center bg-white hover:bg-primary transition-colors duration-500 text-black font-semibold xlg:w-full"
                 href="#planos"
               >
