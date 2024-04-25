@@ -39,7 +39,7 @@ const Header = () => {
             className="bg-zinc-900/50 h-11 w-28 px-2 rounded-full font-bold flex justify-center items-center"
           >
             <a href="/">
-              <img src={logo.src} alt={"logo Zapfy teste"} width={38} className={"mx-6"} />
+              <img src={logo.src} alt={"logo Zapfy teste"} width={38} height={38} className={"mx-6"} />
             </a>
           </motion.div>
 
