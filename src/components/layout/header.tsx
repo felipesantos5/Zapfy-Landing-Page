@@ -64,22 +64,24 @@ const Header = () => {
 
           {!isMobile && (
             <div className="flex xlg:flex">
-              <motion.div
+              <motion.a
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.4 }}
                 className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
+                href="#sobre-nos"
               >
-                <a href="#sobre-nos">Sobre nós</a>
-              </motion.div>
-              <motion.div
+                Sobre nós
+              </motion.a>
+              <motion.a
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.2 }}
-                className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center bg-white text-black font-semibold xlg:w-full"
+                className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center bg-white hover:bg-primary transition-colors duration-500 text-black font-semibold xlg:w-full"
+                href="#planos"
               >
-                <a href="#planos">Planos</a>
-              </motion.div>
+                Planos
+              </motion.a>
             </div>
           )}
         </motion.div>
@@ -87,22 +89,24 @@ const Header = () => {
         {expanded && (
           <div className="text-white flex flex-col justify-center gap-4 items-center bg-[#3c3d3c80]/35 backdrop-blur-[5px] shadow-lg rounded-xl mt-1 py-4">
             {" "}
-            <motion.div
+            <motion.a
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.4 }}
               className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
+              href="#sobre-nos"
             >
-              <a href="#sobre-nos">Sobre nós</a>
-            </motion.div>
-            <motion.div
+              Sobre nós
+            </motion.a>
+            <motion.a
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.2 }}
               className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center  font-semibold bg-white text-black "
+              href="#planos"
             >
-              <a href="#planos">Planos</a>
-            </motion.div>
+              Planos
+            </motion.a>
           </div>
         )}
       </div>
