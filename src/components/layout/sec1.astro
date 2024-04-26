@@ -1,6 +1,7 @@
 ---
 import cellPhone from "@/assets/choros-sem-lagrimas.png";
 import sadBart from "@/assets/sadbart.png";
+import bartYelling from "@/assets/bartyelling.gif";
 import suport from "@/assets/suporte.png";
 import { Image } from "astro:assets";
 ---
@@ -24,18 +25,19 @@ import { Image } from "astro:assets";
   <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-white tracking-tighter text-[17px] leading-6">
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p>Sua operação parou por falta de chips.</p>
-      <Image src={cellPhone} alt="" class="absolute bottom-2 right-4 pointer-events-none" loading="lazy" width="112" />
+      <Image src={cellPhone} alt="celular com o bart dentro triste" class="absolute bottom-2 right-4 pointer-events-none" loading="lazy" width="112" />
     </div>
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p>Você sofre com banimentos frequentes de WhatsApp.</p>
-      <Image src={sadBart} alt="" class="absolute bottom-0 right-6 pointer-events-none" width="60" height="60" loading="lazy" />
+      <Image src={sadBart} alt="bart triste segurando um celular" class="absolute bottom-0 right-6 pointer-events-none" width="60" loading="lazy" />
     </div>
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p class="">Você tem uma lista de leads e não consegue chamar ela inteira.</p>
+      <Image src={bartYelling} alt="bart gritando com um megafone" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="124" />
     </div>
     <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
       <p class="">Você não consegue escalar sua operação por falta de suporte.</p>
-      <Image src={suport} alt="" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="80" />
+      <Image src={suport} alt="bart triste" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="80" />
     </div>
   </div>
 </div>
