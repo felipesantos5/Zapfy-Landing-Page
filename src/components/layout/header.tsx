@@ -36,14 +36,11 @@ const Header = () => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.5 }}
-            className="bg-zinc-900/50 h-11 w-28 px-2 rounded-full font-bold flex justify-center items-center"
+            className="bg-zinc-900/50 h-11 w-24 px-2 rounded-full font-bold flex justify-center items-center"
           >
-            <a href="/">
-              <img src={logo.src} alt={"logo Zapfy teste"} width={38} className={"mx-6"} />
-            </a>
+            <img src={logo.src} alt={"logo Zapfy teste"} width={38} className={"mx-6"} />
           </motion.div>
 
-          {/* Menu de navegação */}
           {isMobile && (
             <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", stiffness: 100, duration: 0.5 }} className={`flex flex-col `}>
               <motion.div
@@ -68,7 +65,7 @@ const Header = () => {
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 80, duration: 1, delay: 1.0 }}
-                className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
+                className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-semibold flex justify-center items-center text-white"
                 href="#sobre-nos"
               >
                 Sobre nós
@@ -93,7 +90,7 @@ const Header = () => {
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.4 }}
-              className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
+              className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-semibold flex justify-center items-center text-white"
               href="#sobre-nos"
             >
               Sobre nós
