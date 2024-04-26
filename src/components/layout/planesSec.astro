@@ -3,14 +3,39 @@ import CardSell from "@/components/cardSell.astro";
 ---
 
 <section class="pt-40 lg:px-[15%] xmd:px-[10%]" id="planos">
-  <div class="max-w-[1100px] m-auto mb-36 flex flex-col gap-7">
+  <div class="max-w-[1200px] m-auto mb-36 flex flex-col gap-7">
     <div>
       <h2 class="text-[46px] tracking-[-2px] font-medium text-center leading-none mb-20">Planos</h2>
 
       <div class="grid grid-cols-3 lg:grid-cols-1 grid-flow-dense gap-6">
-        <CardSell title="Básico" price="119" negative={true} chipsList="1 chip aquecido" description="Para você que precisa de um chip bem aquecido para suas automações e vendas." />
-        <CardSell title="Padrão" price="320" chipsList="3 chips aquecidos" description="3 chips aquecidos por 30 dias de qualidade premium." />
-        <CardSell title="Premium" price="499" chipsList="5 chips aquecidos" description="5 chips aquecidos por 30 dias de qualidade premium." />
+        <CardSell
+          title="Básico"
+          price="119"
+          description="Para você que precisa de um chip bem aquecido para suas automações e vendas"
+          chipsList="1 chip aquecido"
+          msgSend="Envie até 250 mensagens ao dia"
+          msgRecived="Receba até 500 mensagens ao dia"
+          guarantee="Garantia de 7 dias"
+          negative={true}
+        />
+        <CardSell
+          title="Padrão"
+          price="320"
+          description="3 chips aquecidos por 30 dias de qualidade premium."
+          chipsList="3 chips aquecidos"
+          msgSend="Envie até 750 mensagens ao dia"
+          msgRecived="Receba até 1500 mensagens ao dia"
+          guarantee="Garantia de 7 dias"
+        />
+        <CardSell
+          title="Premium"
+          description="6 chips aquecidos por 30 dias de qualidade premium."
+          price="599"
+          chipsList="6 chips aquecidos"
+          msgSend="Envie até 1500 mensagens ao dia"
+          msgRecived="Receba até 3000 mensagens ao dia"
+          guarantee="Garantia de 15 dias"
+        />
       </div>
     </div>
 
@@ -22,7 +47,7 @@ import CardSell from "@/components/cardSell.astro";
       <div class="flex flex-col items-center justify-end gap-5">
         <h2 class="text-white">Entre em contato</h2>
         <a
-          class="bg-white hover:bg-primary transition-colors duration-500 py-3 rounded-full w-2/3 lg:w-full font-semibold text-center"
+          class="bg-white hover:bg-primary hover:text-white transition-colors duration-500 py-3 rounded-full w-2/3 lg:w-full font-semibold text-center"
           href="https://wa.me/48996130664?text=Gostaria%20de%20atendimento">WhatsApp</a
         >
       </div>

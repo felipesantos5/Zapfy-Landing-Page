@@ -3,11 +3,14 @@ interface Props {
   title: string;
   price: string;
   description: string;
+  msgSend: string;
+  msgRecived: string;
+  guarantee: string;
   negative?: boolean;
   chipsList: string;
 }
 
-const { title, price, negative, chipsList, description } = Astro.props;
+const { title, price, negative, chipsList, description, msgSend, msgRecived, guarantee } = Astro.props;
 ---
 
 <div class="bg-cream p-8 flex flex-col gap-6 rounded-xl" transition:animate="initial">
@@ -22,7 +25,7 @@ const { title, price, negative, chipsList, description } = Astro.props;
   <div class="flex flex-col gap-12">
     <hr class="border border-gray-300 rounded-lg" />
   </div>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-3">
     <div class="flex gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="check"
         ><path
@@ -41,7 +44,7 @@ const { title, price, negative, chipsList, description } = Astro.props;
           d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.536-13.536A1 1 0 0 1 16.95 9.88l-5.653 5.653-.004.004a.997.997 0 0 1-1.414 0l-.004-.004-2.825-2.825a1 1 0 1 1 1.414-1.414l2.122 2.121 4.95-4.95Z"
           clip-rule="evenodd"></path></svg
       >
-      <p>Aquecimento de 30 dias</p>
+      <p>{msgSend}</p>
     </div>
     <div class="flex gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="check"
@@ -51,7 +54,17 @@ const { title, price, negative, chipsList, description } = Astro.props;
           d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.536-13.536A1 1 0 0 1 16.95 9.88l-5.653 5.653-.004.004a.997.997 0 0 1-1.414 0l-.004-.004-2.825-2.825a1 1 0 1 1 1.414-1.414l2.122 2.121 4.95-4.95Z"
           clip-rule="evenodd"></path></svg
       >
-      <p>Garantia de 7 dias</p>
+      <p>{msgRecived}</p>
+    </div>
+    <div class="flex gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="check"
+        ><path
+          fill="#000"
+          fill-rule="evenodd"
+          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.536-13.536A1 1 0 0 1 16.95 9.88l-5.653 5.653-.004.004a.997.997 0 0 1-1.414 0l-.004-.004-2.825-2.825a1 1 0 1 1 1.414-1.414l2.122 2.121 4.95-4.95Z"
+          clip-rule="evenodd"></path></svg
+      >
+      <p>{guarantee}</p>
     </div>
 
     <div class="flex gap-2">
