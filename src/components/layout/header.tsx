@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import logo from "@/assets/zWhite.png";
 
-const Header = () => {
+export const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
@@ -32,14 +32,15 @@ const Header = () => {
           transition={{ type: "spring", stiffness: 50, duration: 2 }}
           className="p-[03px] flex justify-center items-center text-[17px] bg-[#3c3d3c80] backdrop-blur-[5px] shadow-lg rounded-full mt-6 "
         >
-          <motion.div
+          <motion.a
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.5 }}
             className="bg-zinc-900/50 h-11 w-24 px-2 rounded-full font-bold flex justify-center items-center"
+            href="/"
           >
             <img src={logo.src} alt={"logo Zapfy teste"} width={38} className={"mx-6"} />
-          </motion.div>
+          </motion.a>
 
           {isMobile && (
             <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", stiffness: 100, duration: 0.5 }} className={`flex flex-col `}>
@@ -110,5 +111,3 @@ const Header = () => {
     </motion.header>
   );
 };
-
-export default Header;

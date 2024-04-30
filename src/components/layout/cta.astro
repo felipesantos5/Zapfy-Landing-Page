@@ -10,16 +10,16 @@ import { Image } from "astro:assets";
       <h2>Livre-se de mistérios.</h2>
       <h2 class="text-graySecundary">Escale sua operação.</h2>
     </div>
-    <p class="text-cram font-medium text-2xl sm:text-lg">Seu parceiro de crescimento</p>
+    <p class="out-text font-medium text-2xl sm:text-lg select-none">Seu parceiro de crescimento</p>
 
-    <p class="golden-text rounded-lg">Pista de ouro</p>
+    <p class="golden-text rounded-lg select-none">Não fique mais na mão</p>
 
-    <!-- <div class="flex flex-col text-center leading-6 out-text">
+    <div class="flex flex-col text-center leading-6 out-text select-none">
       <p>Não perca mais tempo.</p>
       <p>Tempo não tem preço.</p>
-    </div> -->
-    <!--mt-52 -->
-    <div class="flex justify-between mt-64">
+    </div>
+
+    <div class="flex justify-between mt-52">
       <Image src={bartFirst} alt={"bart detetive com uma lupa na mão"} width={245} class="absolute bottom-0 left-0 xsm:-left-5 md:w-44 xsm:w-36 pointer-events-none" decoding="async" />
       <Image src={bartSecund} alt={"bart detetive com cara de desconfiado"} width={195} class="absolute bottom-0 right-0 md:w-36 xsm:w-28 pointer-events-none" decoding="async" />
     </div>
@@ -35,8 +35,8 @@ import { Image } from "astro:assets";
   .golden-text {
     padding-inline: 30px;
     padding-block: 6px;
-    background-image: linear-gradient(to right, rgba(38, 34, 5, 0.3), rgba(38, 34, 5, 1));
+    background-image: linear-gradient(to right, rgba(18, 65, 17, 0.3), rgb(6, 48, 4));
     background-clip: padding-box;
-    color: #ad9f19;
+    color: #46c764;
   }
 </style>

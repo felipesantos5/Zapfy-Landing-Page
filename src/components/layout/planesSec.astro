@@ -3,7 +3,7 @@ import CardSell from "@/components/cardSell.astro";
 ---
 
 <section class="pt-40 lg:px-[15%] xmd:px-[10%]" id="planos">
-  <div class="max-w-[1200px] m-auto mb-36 flex flex-col gap-7">
+  <div class="max-w-[1120px] m-auto mb-36 flex flex-col gap-7">
     <div>
       <h2 class="text-[46px] tracking-[-2px] font-medium text-center leading-none mb-20">Planos</h2>
 
@@ -11,30 +11,33 @@ import CardSell from "@/components/cardSell.astro";
         <CardSell
           title="Básico"
           price="119"
-          description="Para você que precisa de um chip bem aquecido para suas automações e vendas"
+          description="Para você que precisa de um chip bem aquecido para começar."
           chipsList="1 chip aquecido"
           msgSend="Envie até 250 mensagens ao dia"
           msgRecived="Receba até 500 mensagens ao dia"
           guarantee="Garantia de 7 dias"
           negative={true}
+          link="https://wa.me/48996130664?text=Estou%20interessado%20no%20plano%20Básico."
         />
         <CardSell
           title="Padrão"
           price="320"
-          description="3 chips aquecidos por 30 dias de qualidade premium."
+          description="Para você que procura uma escala e quer escalar sua operação."
           chipsList="3 chips aquecidos"
           msgSend="Envie até 750 mensagens ao dia"
           msgRecived="Receba até 1500 mensagens ao dia"
           guarantee="Garantia de 7 dias"
+          link="https://wa.me/48996130664?text=Estou%20interessado%20no%20plano%20Padrão."
         />
         <CardSell
           title="Premium"
-          description="6 chips aquecidos por 30 dias de qualidade premium."
+          description="Para você que procura uma escala e quer escalar sua operação."
           price="599"
           chipsList="6 chips aquecidos"
           msgSend="Envie até 1500 mensagens ao dia"
           msgRecived="Receba até 3000 mensagens ao dia"
           guarantee="Garantia de 15 dias"
+          link="https://wa.me/48996130664?text=Estou%20interessado%20no%20plano%20Premium."
         />
       </div>
     </div>

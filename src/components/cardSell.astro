@@ -8,9 +8,10 @@ interface Props {
   guarantee: string;
   negative?: boolean;
   chipsList: string;
+  link: string;
 }
 
-const { title, price, negative, chipsList, description, msgSend, msgRecived, guarantee } = Astro.props;
+const { title, price, negative, chipsList, description, msgSend, msgRecived, guarantee, link } = Astro.props;
 ---
 
 <div class="bg-cream p-8 flex flex-col gap-6 rounded-xl" transition:animate="initial">
@@ -19,6 +20,7 @@ const { title, price, negative, chipsList, description, msgSend, msgRecived, gua
       <p class="text-lg">Plano</p>
       <h2 class="text-3xl font-semibold">{title}</h2>
     </div>
+
     <p class="text-[#666666] text-sm">{description}</p>
   </div>
   <p class="text-5xl font-semibold">R$ {price}<span class="text-3xl">,00</span></p>
@@ -93,5 +95,5 @@ const { title, price, negative, chipsList, description, msgSend, msgRecived, gua
     </div>
   </div>
 
-  <button class="bg-black py-3 rounded-full text-white w-full hover:bg-graySecundary transition-colors duration-500 mt-14">Compre agora</button>
+  <a class="bg-black py-3 rounded-full text-white w-full mt-14 text-center" href={link} target="_blank">Compre agora</a>
 </div>
