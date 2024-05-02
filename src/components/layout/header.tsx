@@ -66,7 +66,7 @@ export const Header = () => {
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 80, duration: 1, delay: 1.0 }}
-                className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-semibold flex justify-center items-center text-white"
+                className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-medium flex justify-center items-center text-white"
                 href="#sobre-nos"
               >
                 Sobre nós
