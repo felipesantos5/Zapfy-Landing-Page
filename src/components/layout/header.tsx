@@ -23,6 +23,10 @@ export const Header = () => {
     };
   }, []);
 
+  const fecharModal = () => {
+    setExpanded(false);
+  };
+
   return (
     <motion.header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-10">
       <div className="flex flex-col">
@@ -93,6 +97,7 @@ export const Header = () => {
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.4 }}
               className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-semibold flex justify-center items-center text-white"
               href="#sobre-nos"
+              onClick={fecharModal}
             >
               Sobre nós
             </motion.a>
@@ -102,6 +107,7 @@ export const Header = () => {
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.2 }}
               className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center  font-semibold bg-white text-black "
               href="#planos"
+              onClick={fecharModal}
             >
               Planos
             </motion.a>
