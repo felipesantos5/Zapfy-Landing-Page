@@ -75,7 +75,7 @@ export const Header = () => {
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.8 }}
-                className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center bg-white hover:bg-primary transition-colors duration-500 text-black font-semibold xlg:w-full"
+                className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center bg-white  transition-colors duration-500 text-black font-semibold xlg:w-full"
                 href="#planos"
               >
                 Planos
