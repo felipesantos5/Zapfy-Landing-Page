@@ -23,7 +23,7 @@ export const Header = () => {
     };
   }, []);
 
-  const fecharModal = () => {
+  const closeModal = () => {
     setExpanded(false);
   };
 
@@ -97,7 +97,7 @@ export const Header = () => {
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.4 }}
               className="h-11 w-36 hover:bg-[#484849]/40 transition-colors duration-500 rounded-full cursor-pointer font-semibold flex justify-center items-center text-white"
               href="#sobre-nos"
-              onClick={fecharModal}
+              onClick={closeModal}
             >
               Sobre nós
             </motion.a>
@@ -107,7 +107,7 @@ export const Header = () => {
               transition={{ type: "spring", stiffness: 80, duration: 1, delay: 0.2 }}
               className="h-11 w-32 rounded-full cursor-pointer flex justify-center items-center  font-semibold bg-white text-black "
               href="#planos"
-              onClick={fecharModal}
+              onClick={closeModal}
             >
               Planos
             </motion.a>
