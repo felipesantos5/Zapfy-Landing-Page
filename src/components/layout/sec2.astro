@@ -4,41 +4,40 @@ import garantia from "@/assets/garantia.png";
 import bartCellPhone from "@/assets/bartcellphone2.png";
 import Especialistas from "@/assets/Especialistas.png";
 
-import arrowUp from "@/assets/arrowUp.svg";
-import arrowLeft from "@/assets/arrowLeft.svg";
-
 import { Image } from "astro:assets";
 import { Arrowsec2 } from "../arrowsec2";
 ---
 
-<div class="text-center md:text-left">
-  <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:inline-block md:pr-4">Tenha todas as ferramentas</h2>
-  <h2 class="text-zinc-400 text-[40px] tracking-[-2px] font-medium leading-none md:inline-block">para fortalecer sua contigência.</h2>
-</div>
+<section>
+  <div class="text-center md:text-left mb-16">
+    <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:inline-block md:pr-4">Tenha todas as ferramentas</h2>
+    <h2 class="text-zinc-400 text-[40px] tracking-[-2px] font-medium leading-none md:inline-block">para fortalecer sua contigência.</h2>
+  </div>
 
-<div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20">
-  <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-black tracking-tighter text-[17px] leading-6">
-    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p class="w-2/3">Chips bem aquecidos para aguentar sua escala.</p>
-      <Image src={chipsParaEscala} alt="varios celulares indicando escala" class="absolute right-5 bottom-0 pointer-events-none" loading="lazy" width="104" />
+  <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-black tracking-tighter text-[17px] leading-6">
+      <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p class="w-2/3">Chips bem aquecidos para aguentar sua escala.</p>
+        <Image src={chipsParaEscala} alt="varios celulares indicando escala" class="absolute right-5 bottom-0 pointer-events-none" loading="lazy" width="104" />
+      </div>
+      <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p>Garantia de 7 dias.</p>
+        <Image src={garantia} alt="celular demonstrando confiança" class="absolute right-3 bottom-0 pointer-events-none" loading="lazy" width="128" />
+      </div>
+      <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p>Grupo no WhatsApp para suporte imediato.</p>
+        <Image src={bartCellPhone} alt="bart segurando um celular feliz" class="absolute right-6 bottom-0 pointer-events-none" loading="lazy" width="112" />
+      </div>
+      <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p class="">Especialistas em contigência de WhatsApp para ajudar na sua operação.</p>
+        <Image src={Especialistas} alt="bart reseprensentando um especialista no assunto" class="absolute right-6 bottom-0 pointer-events-none" loading="lazy" width="80" />
+      </div>
     </div>
-    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p>Garantia de 7 dias.</p>
-      <Image src={garantia} alt="celular demonstrando confiança" class="absolute right-3 bottom-0 pointer-events-none" loading="lazy" width="128" />
-    </div>
-    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p>Grupo no WhatsApp para suporte imediato.</p>
-      <Image src={bartCellPhone} alt="bart segurando um celular feliz" class="absolute right-6 bottom-0 pointer-events-none" loading="lazy" width="112" />
-    </div>
-    <div class="bg-cream p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p class="">Especialistas em contigência de WhatsApp para ajudar na sua operação.</p>
-      <Image src={Especialistas} alt="bart reseprensentando um especialista no assunto" class="absolute right-6 bottom-0 pointer-events-none" loading="lazy" width="80" />
+    <div class="bg-black text-white p-6 rounded-2xl shadow-md flex items-end justify-between gap-4 grow-1 lg:h-52">
+      <div class="w-10">
+        <Arrowsec2 client:load />
+      </div>
+      <p class="text-2xl font-semibold text-right">O que você vai conseguir</p>
     </div>
   </div>
-  <div class="bg-black text-white p-6 rounded-2xl shadow-md flex items-end justify-between gap-4 grow-1 lg:h-52">
-    <div class="w-10">
-      <Arrowsec2 client:load />
-    </div>
-    <p class="text-2xl font-semibold text-right">O que você vai conseguir</p>
-  </div>
-</div>
+</section>

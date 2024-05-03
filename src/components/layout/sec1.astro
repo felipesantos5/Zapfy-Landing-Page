@@ -7,36 +7,38 @@ import { Image } from "astro:assets";
 import { Arrowsec1 } from "../arrowsec1";
 ---
 
-<div class="text-center md:text-left">
-  <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:inline-block md:pr-4">Você não quer apenas um chip.</h2>
-  <h2 class="text-zinc-400 text-[40px] tracking-[-2px] font-medium leading-none md:inline-block">Você deseja escalar sua operação.</h2>
-</div>
-<div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20">
-  <div class="bg-cream p-6 rounded-2xl shadow-md flex items-end justify-between gap-4 grow-1 lg:h-52 sm:h-full">
-    <p class="text-2xl font-semibold">
-      Talvez você se identifique com
-      <br /> uma dessas situações.
-    </p>
-    <div class="w-10">
-      <Arrowsec1 client:load />
+<section>
+  <div class="text-center md:text-left mb-16">
+    <h2 class="text-[40px] tracking-[-2px] font-medium leading-none md:inline-block md:pr-4">Você não quer apenas um chip.</h2>
+    <h2 class="text-zinc-400 text-[40px] tracking-[-2px] font-medium leading-none md:inline-block">Você deseja escalar sua operação.</h2>
+  </div>
+  <div class="grid grid-cols-2 lg:grid-cols-1 gap-4 mb-20">
+    <div class="bg-cream p-6 rounded-2xl shadow-md flex items-end justify-between gap-4 grow-1 lg:h-52 sm:h-full">
+      <p class="text-2xl font-semibold">
+        Talvez você se identifique com
+        <br /> uma dessas situações.
+      </p>
+      <div class="w-10">
+        <Arrowsec1 client:load />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-white tracking-tighter text-[17px] leading-6">
+      <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p>Sua operação parou por falta de chips.</p>
+        <Image src={cellPhone} alt="celular com o bart dentro triste" class="absolute bottom-2 right-4 pointer-events-none" loading="lazy" width="112" />
+      </div>
+      <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p>Você sofre com banimentos frequentes de WhatsApp.</p>
+        <Image src={sadBart} alt="bart triste segurando um celular" class="absolute bottom-0 right-6 pointer-events-none" width="60" loading="lazy" />
+      </div>
+      <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p class="">Você tem uma lista de leads e não consegue chamar ela inteira.</p>
+        <Image src={bartYelling} alt="bart gritando com um megafone" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="124" />
+      </div>
+      <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
+        <p class="">Você não consegue escalar sua operação por falta de suporte.</p>
+        <Image src={suport} alt="bart triste" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="80" />
+      </div>
     </div>
   </div>
-  <div class="grid grid-cols-2 md:grid-cols-1 gap-4 text-white tracking-tighter text-[17px] leading-6">
-    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p>Sua operação parou por falta de chips.</p>
-      <Image src={cellPhone} alt="celular com o bart dentro triste" class="absolute bottom-2 right-4 pointer-events-none" loading="lazy" width="112" />
-    </div>
-    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p>Você sofre com banimentos frequentes de WhatsApp.</p>
-      <Image src={sadBart} alt="bart triste segurando um celular" class="absolute bottom-0 right-6 pointer-events-none" width="60" loading="lazy" />
-    </div>
-    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p class="">Você tem uma lista de leads e não consegue chamar ela inteira.</p>
-      <Image src={bartYelling} alt="bart gritando com um megafone" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="124" />
-    </div>
-    <div class="bg-black p-6 rounded-2xl shadow-md h-52 flex relative">
-      <p class="">Você não consegue escalar sua operação por falta de suporte.</p>
-      <Image src={suport} alt="bart triste" class="absolute bottom-0 right-4 pointer-events-none" loading="lazy" width="80" />
-    </div>
-  </div>
-</div>
+</section>
